@@ -1,10 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 /* !animation */
-@keyframes ring {
+@keyframes ring1 {
   from {
+     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes ring2 {
+  from {
+     transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes imoge {
+  from{
+    width: 0;
+    height: 0;
+    content:;
+  }
+  to{
+    width: 20rem;
+    height: 20rem;
+    content: url(flow.html);
   }
 }
 /* !stope animation */
@@ -124,7 +145,7 @@ img {
   border-radius: 50%;
   border: 1px solid;
   border-color: #786450 #786450 #786450 transparent;
-  animation: ring all 1.5s ease-in-out;
+  animation: ring1 1.5s ease-in-out;
   transition: all 1.5s ease-in-out;
 }
 .ring-2 {
@@ -136,6 +157,7 @@ img {
   border-radius: 50%;
   border: 1px solid;
   border-color: #786450 transparent #786450 #786450;
+  animation: ring2 1.5s ease-in-out;
   transition: all 1.5s ease-in-out;
 }
 /* !animat */
@@ -154,5 +176,6 @@ img {
   background-color: #e1cfc2;
 }
 .btn:active::after {
-  content: attr();
+  content:url(flow.html);
+  animation: imoge 2s ease-in;
 }

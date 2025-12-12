@@ -1,0 +1,62 @@
+html{
+    font-size: 10px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+main{
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    border: solid 5px black;
+    background-color: rgb(255, 234, 0);
+    border-radius: 100%;
+}
+div{
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    border: solid 1px black;
+    background-color: #fff;
+    border-radius: 100%;
+}
+.l-eyes{
+ position: absolute;
+ top: 20%;
+ left:16% ;
+}
+.r-eyes{
+ position: absolute;
+ top: 20%;
+ right:16% ;
+}
+.dote{
+    width: 2rem;
+    height: 2rem;
+    border: solid 1px black;
+    background-color: #000;
+    border-radius: 100%;
+    position: absolute;
+    top:45% ;
+   left:20% ;
+}
+.lath{
+    position: absolute;
+    top:-71px ;
+    left: 5px;
+    width: 18rem;
+    height: 23rem;
+    border-color: transparent transparent black transparent   ;
+    border-width: 5px;
+    border-style: solid;
+     border-radius: 100%;
+}
